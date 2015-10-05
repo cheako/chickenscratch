@@ -1,1 +1,1 @@
-[Fiddle this.](http://jsfiddle.net/gh/get/library/pure/cheako/chickenscratch/tree/master/accelerometer/)
+[Fiddle this.](https://jsfiddle.net/gh/get/library/pure/cheako/chickenscratch/tree/master/accelerometer/)
