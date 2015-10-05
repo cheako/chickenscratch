@@ -1,22 +1,3 @@
-function boundingBoxCheck() {
-    if (x < 0) {
-        x = 0;
-        vx = -vx;
-    }
-    if (y < 0) {
-        y = 0;
-        vy = -vy;
-    }
-    if (x > document.documentElement.clientWidth - 20) {
-        x = document.documentElement.clientWidth - 20;
-        vx = -vx;
-    }
-    if (y > document.documentElement.clientHeight - 20) {
-        y = document.documentElement.clientHeight - 20;
-        vy = -vy;
-    }
-}
-
 function main_enter() {
 
     document.getElementById("splash").style.display = "none";
@@ -83,4 +64,24 @@ function main_enter() {
 
         }, 25);
     }
+
+    function boundingBoxCheck() {
+        if (x < 0) {
+            x = 0;
+            vx = -vx;
+        }
+        if (y < 0) {
+            y = 0;
+            vy = -vy;
+        }
+        if (x > document.documentElement.clientWidth - 20) {
+            x = document.documentElement.clientWidth - 20;
+            vx = -vx;
+        }
+        if (y > document.documentElement.clientHeight - 20) {
+            y = document.documentElement.clientHeight - 20;
+            vy = -vy;
+        }
+    }
+
 }
