@@ -30,14 +30,13 @@ Affixes = [
 TerrainTiles = [{
     style: "yellow",
     type: "$"
-  }, {
+}, {
     style: "lime",
     type: "F"
-  },
-  {
+}, {
     style: "lime",
     type: "V"
-  }, {
-    style: "olive",
+}, {
+    style: "#A50",
     type: "M"
-  }];
+}];
