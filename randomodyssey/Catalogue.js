@@ -27,16 +27,21 @@ Affixes = [
         }
     }]
 ];
+Sights = [ { type: 'Gambler', odds: 0.05, action: function(g){ } }, { type: 'Tree', odds: 0, action: function(g){ } }, { type: 'Rock', odds: 0, action: function(g){ } } ];
 TerrainTiles = [{
+    sights: [ { type: 'Inn', odds: 1, action: function(g){ } },  { type: 'Bar', odds: 1, action: function(g){ } }, Sights[0] ],
     style: "yellow",
     type: "$"
 }, {
+    sights: [ { type: 'Tree', odds: 0.6, action: Sights[1].action },  Sights[0] ],
     style: "lime",
     type: "F"
 }, {
+    sights: [ { type: 'Tree', odds: 0.6, action: Sights[1].action },  Sights[0] ],
     style: "lime",
     type: "V"
 }, {
+    sights: [ { type: 'Rock', odds: 1, action: Sights[2].action } ],
     style: "#A50",
     type: "M"
 }];
